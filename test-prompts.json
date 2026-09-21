@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "帮我写个周报",
+    "expected": "触发 skill, 跑 gather_commits.sh 抓本人周一~周五提交(含 stat), 看 subject+stat 转写成中文编号列表草稿, 每条标 commit 日期, 给草稿+三个确认问题。配置缺失(exit 2)则问用户写配置。不编造非代码内容。"
+  },
+  {
+    "id": 2,
+    "prompt": "汇总一下这周的工作",
+    "expected": "换措辞触发, 测 description 触发词覆盖。同上流程。"
+  },
+  {
+    "id": 3,
+    "prompt": "周报日期从 9.1 到 9.11 帮我生成",
+    "expected": "识别为指定日期范围, 传参跑脚本(覆盖默认周一~周五), 按 subject+stat 转写, 标日期查重。测自定义时间窗口。"
+  }
+]

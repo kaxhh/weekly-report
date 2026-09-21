@@ -1,8 +1,8 @@
 # 你的 git 提交用户名(或 email)。gather_commits.sh 用 --author 过滤本人提交,
 # 排除别人合并进来的提交。填你在 oneos-multi-* 仓库里 git config user.name 的值。
 # 不确定的话: 在任一仓库跑 `git config user.name` 拿到。
-author=luoshunyuan
+author=your-git-name
 
 # 你的 oneos-multi-* 仓库根目录(这些仓库所在的目录)。
 # 脚本会遍历该目录下所有 oneos-multi-* 子目录里的 git 仓库。
-repo_root=/home/me/pd-cmiot
+repo_root=/path/to/your/repos
