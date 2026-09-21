@@ -7,7 +7,7 @@ description: 生成周报。抓 oneos-multi-* 仓库本人周一~周五的 git �
 
 抓本人周一~周五在 `oneos-multi-*` 仓库的 git 提交,看每个提交改了什么(subject + stat),按你的风格转写成中文编号列表草稿,确认补充后输出最终版。性能/评估/沟通等非代码工作 git 抓不到,在确认环节问用户补。
 
-## 风格(参考 references/weekly-style-example.md)
+## 风格
 
 中文编号列表,每条一句话讲清"做了什么 + 为什么 + 关键技术点"。例:
 `修复 mnt_ns 中 fs_rec 悬空指针崩溃:释放后置空外层指针并在取 fd 前加 NULL 守卫。`
