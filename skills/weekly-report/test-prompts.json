@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "prompt": "帮我写个周报",
+    "expected": "触发 skill, 跑 gather_commits.sh 抓 luoshunyuan 本周提交(默认本周一至今, 空抓则 fallback 最近7天), 转写成中文编号列表草稿, 每条标 commit 日期, 给出草稿 + 三个确认问题(代码条目查重/非代码工作/未提交工作)。不能直接编造内容。"
+  },
+  {
+    "id": 2,
+    "prompt": "汇总一下这周的工作",
+    "expected": "同上语义, 用别的措辞触发。验证 description 触发词覆盖(本 prompt 没提 git/周报, 但 intent 相同)。"
+  },
+  {
+    "id": 3,
+    "prompt": "周报日期从 9.1 到 9.21 帮我生成",
+    "expected": "识别为指定日期范围, 直接传参跑脚本(不 fallback), 转写时区分哪些可能已在历史周报报过。验证 skill 能处理用户自定义时间窗口。"
+  }
+]
